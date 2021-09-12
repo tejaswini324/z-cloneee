@@ -73,7 +73,7 @@ class Details extends React.Component{
         const { restaurantId } = this.state;
         console.log(restaurantId);
         axios({
-            url: `https://zz-clone.herokuapp.com/${restaurantId}`,
+            url: `https://zz-clone.herokuapp.com/menuItems/${restaurantId}`,
             method:"GET",
             Headers:{'Content-Type': 'application/json'}
          }).then(response =>{
